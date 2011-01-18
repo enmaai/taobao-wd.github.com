@@ -51,5 +51,11 @@ css grid 引用地址：
 - [Lazyload Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/yui3-lazyload/README.markdown)
 - Demo:[yui3-lazyload.html](http://taobao-wd.github.com/yui3-lazyload/demo.html)
 
+## html5-templete
+- [html5-templete Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/html5-templete/README.markdown)
+- Demo:[html5.html](http://taobao-wd.github.com/html5-templete/html5.html)
+- Demo:[html5-reset.css](http://taobao-wd.github.com/html5-templete/html5-reset.css)
+- Demo:[html5.js](http://taobao-wd.github.com/html5-templete/html5.js)
+
 # Widgets
 
