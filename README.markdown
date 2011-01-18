@@ -45,7 +45,7 @@ css grid 引用地址：
 
 	http://a.tbcdn.cn/s/kissy/1.1.6/cssbase/base.css
 
-# YUI3 Based Patterns
+# Examples
 
 ## 基于YUI3的延时加载
 - [Lazyload Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/yui3-lazyload/README.markdown)
@@ -53,4 +53,3 @@ css grid 引用地址：
 
 # Widgets
 
-# Just For Fun
