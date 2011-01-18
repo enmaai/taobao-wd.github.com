@@ -1,14 +1,14 @@
 # 关于Taobao WD Gallery
 
-`Taobao WD Gallery` 是淘宝北京 FE 团队 Demo 预览的沉淀和积累，是[guide 手册](https://github.com/taobao-wd/guide)的兄弟项目，由团队成员贡献代码和维护文档，成员开通编辑权限请联系`拔赤`
+`Taobao WD Gallery` 是淘宝北京 FE 团队 Demo 预览的沉淀和积累，是 [guide 手册](https://github.com/taobao-wd/guide)的兄弟项目，由团队成员贡献代码和维护文档，成员开通编辑权限请联系`拔赤`
 
-每个 Demo 占用一个目录，Demo 目录中必须配备 README，Demo 需要做到良好的浏览器兼容，全局库(`YUI3`/`1cssreset`/`cssgrid`)的引用直接使用cdn地址，使用图片尽可能传至 tps 中
+每个 Demo 占用一个目录，Demo 目录中必须配备 README，Demo 需要做到良好的浏览器兼容，全局库(`YUI3`/`cssreset`/`cssgrid`)的引用直接使用cdn地址，使用图片尽可能传至 tps 中，Markdown 语法格式请参照[这里](http://daringfireball.net/projects/markdown/syntax)
 
 Taobao WD Gallery 的整理离不开 [Cubee 项目](http://cubee.github.com/doc/),`Cubee`项目的维护已经暂停
 
 # Css Reset & Css Grid
 
-## Reset 
+## Css Reset 
 
 Css Reset 使用 Kissy-Reset
 
