@@ -1,6 +1,8 @@
 YUI3 延时加载 Demo
 ==============
 
+- [Demo](http://taobao-wd.github.com/yui3-lazyload/demo.html)
+
 模仿`KISSY`的延时加载功能，包含图片延时加载和`Dom`的延时渲染（待渲染的`Dom`节点的`outerHTML`放在`textarea`中），其中图片的延时加载使用 YUI3 的 [imageloader](http://developer.yahoo.com/yui/3/imageloader/) 实现，Dom 的延时渲染只模拟了 textarea 区域滚动到可视区域后加载。在 Tab 中的隐藏延时加载未实现
 
 YUI3 imageloader 同样实现了其他Dom事件的触发加载和自定义事件触发加载，[YUI3-imageloader](http://developer.yahoo.com/yui/3/imageloader/)
