@@ -32,7 +32,7 @@ css reset 引用地址：
 
 - [Kissy CssGrid Doc](http://docs.kissyui.com/kissy/docs/cssgrids/index.html)
 - [Demo 页面](http://kissyteam.github.com/kissy/src/cssgrids/grids-taobao.html)
-- [布局尺寸实例](http://docs.kissyui.com/kissy/src/cssgrids/grids-taobao.css) - 项目中需要自行解决布局尺寸，可参照 Demo
+- [布局尺寸实例](http://docs.kissyui.com/kissy/src/cssgrids/grids-taobao.css) - 项目中需要自行解决布局尺寸，可参照 Demo 和 [实例代码](https://gist.github.com/784105)
 - [命名规则和样式生成工具](http://kissyteam.github.com/kissy/src/cssgrids/css-generator.html)
 
 css grid 引用地址：
@@ -44,3 +44,13 @@ css grid 引用地址：
 `base.css`包含`reset.css`和`grid.css`,引用地址:
 
 	http://a.tbcdn.cn/s/kissy/1.1.6/cssbase/base.css
+
+# YUI3 Based Patterns
+
+## 基于YUI3的延时加载
+- [Lazyload Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/yui3-lazyload/README.markdown)
+- Demo:[yui3-lazyload.html](http://taobao-wd.github.com/yui3-lazyload/demo.html)
+
+# Widgets
+
+# Just For Fun
