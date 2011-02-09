@@ -63,8 +63,8 @@ Y.Spage实例对象的方法和事件
 -	事件类型:pagechange:切换页码事件，带回
 
 	{
-		rear:rear,
-		top:top,
-		index:index,
-		step:that.step
+	rear:rear,
+	top:top,
+	index:index,
+	step:that.step
 	}

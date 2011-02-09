@@ -37,7 +37,7 @@
 
 须知
 
--	#J_tab_3，必须指定
+-	J_tab_3，必须指定
 -	ul.tab-nav,控制导航,必须指定,容器内容可以为空，默认指定自然数为下标
 -	ul.tab-nav li.selected,控制tab页签,若有li，则必须指定
 -	div.tab-content，内容容器，必须指定

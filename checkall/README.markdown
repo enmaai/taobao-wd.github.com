@@ -37,11 +37,13 @@
 API
 
 配置	
+
 - node:{string|array} 必填，全选checkbox的YUI node，类型可以为数组，也可以为一个YUI node
 - nodelist:{YUI nodelist} 必填  checkbox items
 - inverse:{string|array} 选填 反选按钮，参数可以为数组，也可以为一个YUI node
 
 实例方法
+
 - invert:反选			
 
 事件类型：
@@ -49,8 +51,7 @@ API
 - check:每次点击触发的切换事件，带回
 
 	{
-		checked:{array}(当前checked的节点数组，数组成员为YUI node)
-		unchecked:{array}(当前unchecked的节点数组，数组成员为YUI node)
+	checked:{array}(当前checked的节点数组，数组成员为YUI node)
+	unchecked:{array}(当前unchecked的节点数组，数组成员为YUI node)
 	}
 		
-

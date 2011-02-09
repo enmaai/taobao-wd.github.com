@@ -73,8 +73,13 @@ css grid 引用地址：
 
 # Widgets
 
+## PosTip 相对提示层
+
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/postip/README.markdown)
+- [Demo](http://taobao-wd.github.com/postip/demo/index.html)
+
 ## Calendar 日历
-- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/Calendar/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/calendar/README.markdown)
 - [Demo](http://taobao-wd.github.com/calendar/demo/calendar.html)
 
 ## Checkall 全选
