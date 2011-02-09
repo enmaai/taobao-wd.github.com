@@ -57,8 +57,19 @@ css grid 引用地址：
 - Demo:[html5-reset.css](http://taobao-wd.github.com/html5-templete/html5-reset.css)
 - Demo:[html5.js](http://taobao-wd.github.com/html5-templete/html5.js)
 
+## 浮点数运算的bugfix
+- bug:[Demo](http://taobao-wd.github.com/js-float/js_float_1.html)
+- bugfix:[Demo](http://taobao-wd.github.com/js-float/js_float_2.html)
+
+## Escape和encodeURI
+- [Demo](http://taobao-wd.github.com/escape_and_encodeURI/escape_and_encodeURIComponent_test.html)
+
 ## Using Css3
 - [Demo](http://cubee.github.com/example/using-css3.html)
+
+## jquery 和 yui3 的选择器支持情况
+- jquery:[Demo](http://tbexample.googlecode.com/svn/trunk/selector/jquery_selector/Selectors.htm)
+- yui3:[Demo](http://taobao-wd.github.com/selector/yui-selector.html)
 
 # Widgets
 
@@ -105,6 +116,9 @@ css grid 引用地址：
 - [Demo](http://taobao-wd.github.com/datecascade/demo/index.html)
 
 ## Tip 提示
-- [Doc](/tip/README.markdown)
 - [Demo](http://taobao-wd.github.com/tip/demo/tip.html)
+
+## Radio 控件
+- [Demo](http://taobao-wd.github.com/radio/radio.html)
+
 
