@@ -10,6 +10,8 @@
 	http://a.tbcdn.cn/s/yui/3.2.0/build/yui/yui-min.js
 	http://a.tbcdn.cn/s/yui/3.3.0/build/yui/yui-min.js
 
+[KISSY Doc](http://docs.kissyui.com/)...
+
 Taobao WD Gallery 的整理离不开 [Cubee 项目](http://cubee.github.com/doc/),`Cubee`项目的维护已经暂停
 
 # Css Reset & Css Grid
@@ -18,9 +20,7 @@ Taobao WD Gallery 的整理离不开 [Cubee 项目](http://cubee.github.com/doc/
 
 Css Reset 使用 Kissy-Reset
 
-- [Kissy CssReset Doc](http://docs.kissyui.com/kissy/docs/cssreset/index.html)
-- [英文测试页](http://kissyteam.github.com/kissy/src/cssreset/test.html)
-- [中文测试页](http://kissyteam.github.com/kissy/src/cssreset/test-post.html)
+- [Kissy CssReset Doc](http://docs.kissyui.com/kissy/docs/cssreset/index.html),[英文测试页](http://kissyteam.github.com/kissy/src/cssreset/test.html),[中文测试页](http://kissyteam.github.com/kissy/src/cssreset/test-post.html)
 
 css reset 引用地址：
 
@@ -48,14 +48,47 @@ css grid 引用地址：
 # Examples
 
 ## 基于YUI3的延时加载
-- [Lazyload Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/yui3-lazyload/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/yui3-lazyload/README.markdown)
 - Demo:[yui3-lazyload.html](http://taobao-wd.github.com/yui3-lazyload/demo.html)
 
 ## html5-templete
-- [html5-templete Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/html5-templete/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/html5-templete/README.markdown)
 - Demo:[html5.html](http://taobao-wd.github.com/html5-templete/html5.html)
 - Demo:[html5-reset.css](http://taobao-wd.github.com/html5-templete/html5-reset.css)
 - Demo:[html5.js](http://taobao-wd.github.com/html5-templete/html5.js)
 
 # Widgets
+
+## Calendar 日历
+- [Doc](/Calendar/README.markdown)
+- [Demo](http://taobao-wd.github.com/calendar/demo/calendar.html)
+
+## Checkall 全选
+- [Demo](http://taobao-wd.github.com/checkall/demo/demo.html)
+
+## Box 弹层
+- [Doc](/box/README.markdown)
+- [Demo](http://taobao-wd.github.com/box/demo/demo-box.html)
+
+## Slide 幻灯/Tab
+- [Doc](/slide/README.markdown)
+- [Tab Demo](http://taobao-wd.github.com/slide/demo/tab.html)
+- [Slide Demo](http://taobao-wd.github.com/slide/demo/slide.html)
+- [none-effect DEMO](http://taobao-wd.github.com/slide/demo/tb-slide-none.html)
+- [fade-effect DEMO](http://taobao-wd.github.com/slide/demo/tb-slide-fade.html)
+- [v-slide DEMO](http://taobao-wd.github.com/slide/demo/tb-slide-v-scroll.html)
+- [h-slide DEMO](http://taobao-wd.github.com/slide/demo/tb-slide-scroll.html)
+- [carsousel DEMO](http://taobao-wd.github.com/slide/demo/tb-carsousel.html)
+- [le.taobao.com DEMO](http://taobao-wd.github.com/slide/demo/le.taobao.com.html)
+- [mojo DEMO](http://taobao-wd.github.com/slide/demo/mojo-slide.html)
+
+## Pagination 分页控件
+- [Doc](/pagination/README.markdown)
+- [Demo1](http://taobao-wd.github.com/pagination/demo/pagination.html)
+- [Demo2](http://taobao-wd.github.com/pagination2/demo/pagination.html)
+
+## PageList 分页列表
+- [Doc](/simple-page/README.markdown)
+- [Demo1](http://taobao-wd.github.com/simple-page/demo/demo.html)
+- [Demo2](http://taobao-wd.github.com/simple-page/demo/demo2.html)
 
