@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Keywords" content="简单的XHTML页面" />
+	<meta name="Description" content="这是一个简单的XHTML页面" />
+	<title>简单的XHTML页面</title>
+	<style>
+	body {font-size:11px;}
+	.gray {background:#f3f3f3}
+	</style>
+
+</head>
+<body>
+<h1>js浮点数计算——原始乘除带来的误差</h1>
+<div id="showMe" style="padding: 10px;">
+计算i/10*100 == i*10
+</div>
+<div id="t"></div>
+
+
+
+</body>
+
+<script>
+var str = '<table>';
+var tt = new Date().getTime();
+for(var i = 2000;i<12000;i++){
+	var k = new Number(i);
+	var f = new Number(i/10);
+	var b = new Number(f*100);
+	var d = new Number(i*10);
+
+	//小数		二进制		结果		结果二进制		正确结果二进制
+	str += [
+		'<tr class="'+(i%2==0?'':'gray')+'"><td>',
+		f.toString(),
+		//'('+f.toString(2)+')',
+		'</td><td>',
+		'计算结果：i*100 = '+b.toString(),
+		//'('+b.toString(2)+')',
+		'</td><td>',
+		'\t真实结果:'+d.toString(),
+		//'('+d.toString(2)+')',
+		'</td><td>',
+		(Number(b) == Number(d))?'true':'<b><font color=red>false</font></b>',
+		'</td></tr>'
+	].join('');
+}
+alert('执行时间：'+(new Date().getTime() - tt)+'ms');
+str+='</table>';
+document.getElementById('t').innerHTML = str;
+
+</script>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Keywords" content="简单的XHTML页面" />
+	<meta name="Description" content="这是一个简单的XHTML页面" />
+	<title>简单的XHTML页面</title>
+	<style>
+	body {font-size:11px;}
+	.gray {background:#f3f3f3}
+	</style>
+
+</head>
+<body>
+<h1>js浮点数计算——hack后的运算</h1>
+<div id="showMe" style="padding: 10px;">
+计算i/10*100 == i*10
+</div>
+<div id="t"></div>
+
+
+
+</body>
+<script>
+//除法
+Number.prototype.div = function(arg){
+	//return this/arg;
+	if(!/\./.test(this)  && !/\./.test(arg)){
+		return this/arg;
+	}
+	var arg1 = this;
+	var arg2 = arg;
+	var t1=0,t2=0,r1,r2,s1=arg1.toString(),s2=arg1.toString();
+	if(s1.indexOf('.')>=0)t1 = s1.split(".")[1].length;
+	if(s2.indexOf('.')>=0)t2 = s2.split(".")[1].length;
+	//try{t1=arg1.toString().split(".")[1].length}catch(e){}
+	//try{t2=arg2.toString().split(".")[1].length}catch(e){}
+	r1=Number(s1.replace('.',''))
+	r2=Number(s2.replace('.',''))
+	return (r1/r2)*Math.pow(10,t2-t1);
+};
+
+//乘法
+Number.prototype.mul = function (arg){
+	//return this*arg;
+	if(!/\./.test(this)  && !/\./.test(arg)){
+		return this*arg;
+	}
+	var arg1 = this;
+	var arg2 = arg;
+	var m=0,s1=arg1.toString(),s2=arg2.toString();
+	if(s1.indexOf('.')>=0)m+=s1.split(".")[1].length;
+	if(s2.indexOf('.')>=0)m+=s2.split(".")[1].length;
+	//try{m+=s1.split(".")[1].length}catch(e){}
+	//try{m+=s2.split(".")[1].length}catch(e){}
+	return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m);
+};
+
+//加法
+Number.prototype.add = function (arg){
+	if(!/\./.test(this)  && !/\./.test(arg)){
+		return this+arg;
+	}
+	var arg2 = this;
+	var arg1 = arg;
+	var r1,r2,m;
+	try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
+	try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}
+	m=Math.pow(10,Math.max(r1,r2))
+	return (arg1*m+arg2*m)/m;
+};
+
+var str = '<table>';
+var tt = new Date().getTime();
+//console.profile("Profile Test");
+for(var i = 2000;i<12000;i++){
+	/*
+	var k = new Number(i);
+	var f = new Number(i/10);
+	var b = new Number(f*100);
+	var d = new Number(i*10);
+	*/
+
+	var k = new Number(i);
+	var f = new Number(i).div(10);
+	var b = new Number(f).mul(100);
+	var d = new Number(i).mul(10);
+
+	str += [
+		'<tr class="'+(i%2==0?'':'gray')+'"><td>',
+		f.toString(),
+		//'('+f.toString(2)+')',
+		'</td><td>',
+		'计算结果：i*100 = '+b.toString(),
+		//'('+b.toString(2)+')',
+		'</td><td>',
+		'\t真实结果:'+d.toString(),
+		//'('+d.toString(2)+')',
+		'</td><td>',
+		(Number(b) == Number(d))?'true':'<b><font color=red>false</font></b>',
+		'</td></tr>'
+	].join('');
+}
+//console.profileEnd(); 
+alert('执行时间：' + (new Date().getTime() - tt)+'ms');
+str+='</table>';
+document.getElementById('t').innerHTML = str;
+
+</script>
+
+</html>

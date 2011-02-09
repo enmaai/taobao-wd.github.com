@@ -57,6 +57,9 @@ css grid 引用地址：
 - Demo:[html5-reset.css](http://taobao-wd.github.com/html5-templete/html5-reset.css)
 - Demo:[html5.js](http://taobao-wd.github.com/html5-templete/html5.js)
 
+## Using Css3
+- [Demo](http://cubee.github.com/example/using-css3.html)
+
 # Widgets
 
 ## Calendar 日历
@@ -64,6 +67,7 @@ css grid 引用地址：
 - [Demo](http://taobao-wd.github.com/calendar/demo/calendar.html)
 
 ## Checkall 全选
+- [Doc](/checkall/README.markdown)
 - [Demo](http://taobao-wd.github.com/checkall/demo/demo.html)
 
 ## Box 弹层
@@ -78,7 +82,7 @@ css grid 引用地址：
 - [fade-effect DEMO](http://taobao-wd.github.com/slide/demo/tb-slide-fade.html)
 - [v-slide DEMO](http://taobao-wd.github.com/slide/demo/tb-slide-v-scroll.html)
 - [h-slide DEMO](http://taobao-wd.github.com/slide/demo/tb-slide-scroll.html)
-- [carsousel DEMO](http://taobao-wd.github.com/slide/demo/tb-carsousel.html)
+- [carsousel DEMO](http://taobao-wd.github.com/slide/demo/tb-carousel.html)
 - [le.taobao.com DEMO](http://taobao-wd.github.com/slide/demo/le.taobao.com.html)
 - [mojo DEMO](http://taobao-wd.github.com/slide/demo/mojo-slide.html)
 
@@ -91,4 +95,16 @@ css grid 引用地址：
 - [Doc](/simple-page/README.markdown)
 - [Demo1](http://taobao-wd.github.com/simple-page/demo/demo.html)
 - [Demo2](http://taobao-wd.github.com/simple-page/demo/demo2.html)
+
+## Banner 对联广告
+- [Doc](/banner/README.markdown)
+- [Demo](http://taobao-wd.github.com/banner/demo/demo.html)
+
+## datecascade 日期级联
+- [Doc](/datecascade/README.markdown)
+- [Demo](http://taobao-wd.github.com/datecascade/demo/index.html)
+
+## Tip 提示
+- [Doc](/tip/README.markdown)
+- [Demo](http://taobao-wd.github.com/tip/demo/tip.html)
 

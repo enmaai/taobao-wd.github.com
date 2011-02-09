@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Basic Caching</title>
+<script type="text/javascript" src="http://cn.yimg.com/i/yui/3.0.0b1/build/yui/yui-min.js"></script>
+
+</head>
+
+<body class=" yui-skin-sam">
+
+<h1>Caching例子</h1>
+
+<form id="demo">
+    <fieldset>
+        <label for="demo_max">最大Cache长度: <input type="text" id="demo_max" class="short" value="0"> <input type="button" id="demo_setMax" value="Set max"></label>
+    </fieldset>
+    <fieldset>
+        <label for="demo_addKey">Key: <input type="text" id="demo_addKey"></label>
+        <label for="demo_addValue">Value: <input type="text" id="demo_addValue"></label>
+
+        <input type="button" id="demo_add" value="Cache value">
+    </fieldset>
+    <fieldset>
+        <label for="demo_retrieveKey">Key: <input type="text" id="demo_retrieveKey"></label>
+        <input type="button" id="demo_retrieve" value="Retrieve value">
+    </fieldset>
+    <fieldset>
+        <input type="button" id="demo_flush" value="Flush cache"></label>
+
+    </fieldset>
+</form>
+
+
+
+<script type="text/javascript">
+YUI({debug : true, filter : 'raw'}).use("node",'console',"cache" ,function (Y) {
+	//debugger窗口
+	var console = new Y.Console();
+    console.render();
+
+    var cache = new Y.Cache();
+    
+    Y.on("click", function(e){
+        cache.set("max", Number(Y.get("#demo_max").get("value")));
+        Y.log("最大Cache长度为 " + cache.get("max") + ".");
+    }, "#demo_setMax");
+    
+    Y.on("click", function(e){
+        cache.add(Y.get("#demo_addKey").get("value"), Y.get("#demo_addValue").get("value"));
+        var msg = cache.get("max") ?
+            "值被保存. 缓存大小为 " + cache.get("size") + "." :
+            "最大缓存为 " + cache.get("max") + ". 值没有被保存."
+        Y.log(msg);
+    }, "#demo_add");
+
+    Y.on("click", function(e){
+        var entry = cache.retrieve(Y.get("#demo_retrieveKey").get("value")),
+            output = entry ? entry.response : "值没有被保存.";
+        Y.log(output);
+    }, "#demo_retrieve");
+
+    Y.on("click", function(e){
+        cache.flush();
+        Y.log("缓存清空.");
+    }, "#demo_flush");
+});
+</script>
+
+</body>
+</html>
