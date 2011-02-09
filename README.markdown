@@ -74,19 +74,19 @@ css grid 引用地址：
 # Widgets
 
 ## Calendar 日历
-- [Doc](/Calendar/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/Calendar/README.markdown)
 - [Demo](http://taobao-wd.github.com/calendar/demo/calendar.html)
 
 ## Checkall 全选
-- [Doc](/checkall/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/checkall/README.markdown)
 - [Demo](http://taobao-wd.github.com/checkall/demo/demo.html)
 
 ## Box 弹层
-- [Doc](/box/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/box/README.markdown)
 - [Demo](http://taobao-wd.github.com/box/demo/demo-box.html)
 
 ## Slide 幻灯/Tab
-- [Doc](/slide/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/slide/README.markdown)
 - [Tab Demo](http://taobao-wd.github.com/slide/demo/tab.html)
 - [Slide Demo](http://taobao-wd.github.com/slide/demo/slide.html)
 - [none-effect DEMO](http://taobao-wd.github.com/slide/demo/tb-slide-none.html)
@@ -98,21 +98,21 @@ css grid 引用地址：
 - [mojo DEMO](http://taobao-wd.github.com/slide/demo/mojo-slide.html)
 
 ## Pagination 分页控件
-- [Doc](/pagination/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/masterpagination/README.markdown)
 - [Demo1](http://taobao-wd.github.com/pagination/demo/pagination.html)
 - [Demo2](http://taobao-wd.github.com/pagination2/demo/pagination.html)
 
 ## PageList 分页列表
-- [Doc](/simple-page/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/simple-page/README.markdown)
 - [Demo1](http://taobao-wd.github.com/simple-page/demo/demo.html)
 - [Demo2](http://taobao-wd.github.com/simple-page/demo/demo2.html)
 
 ## Banner 对联广告
-- [Doc](/banner/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/banner/README.markdown)
 - [Demo](http://taobao-wd.github.com/banner/demo/demo.html)
 
 ## datecascade 日期级联
-- [Doc](/datecascade/README.markdown)
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/datecascade/README.markdown)
 - [Demo](http://taobao-wd.github.com/datecascade/demo/index.html)
 
 ## Tip 提示
