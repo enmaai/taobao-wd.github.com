@@ -1,6 +1,11 @@
 //作者：lijing00333@163.com
 YUI.namespace('Y.Slide');
 YUI.add('slide',function(Y){
+	if(typeof Y.Node.prototype.queryAll == 'undefined'){
+		Y.Node.prototype.queryAll = Y.Node.prototype.all;
+		Y.Node.prototype.query = Y.Node.prototype.one;
+	}
+
 	Slide = function(){
 		this.init.apply(this,arguments);
 	};
@@ -388,6 +393,15 @@ YUI.add('slide',function(Y){
 				navnode:that.tabs.item(index),
 				pannelnode:that.pannels.item(index)
 			});
+			//延迟执行的脚本
+			var scriptsArea = that.pannels.item(index).queryAll('textarea.lazyload');
+			if(scriptsArea){
+				scriptsArea.each(function(node,i){
+					node.setStyle('display','none');
+					that.pannels.item(index).append(node.get('value'));
+				});
+				scriptsArea.remove();
+			}
 		},
 		//去往任意一个,0,1,2,3...
 		goto:function(index){

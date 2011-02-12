@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gbk">
+<title>淘宝网 - 淘！我喜欢</title>
+<link rel="stylesheet" type="text/css" href="http://a.tbcdn.cn/app/dp/css/global.css">
+<style>
+.hidden {display:none;}
+/*--标准--*/
+.t-tabview {position:relative;text-align:left;width:100%;}
+.t-tabview .tab-nav {width:auto;*width:100%;border-color:#2647A0;border-style:solid;border-width:0 0 5px 0;}
+.t-tabview .tab-nav li {float:left;border:1px solid #999999;color:black;padding:5px;margin:0 0.16em 0 0}
+.t-tabview .tab-nav li a,
+.t-tabview .tab-nav li a:link,
+.t-tabview .tab-nav li a:visited,
+.t-tabview .tab-nav li a:hover {color:black;text-decoration:none;}
+.t-tabview .tab-nav li.selected a,
+.t-tabview .tab-nav li.selected a:link,
+.t-tabview .tab-nav li.selected a:visited,
+.t-tabview .tab-nav li.selected a:hover {color:white;text-decoration:none;}
+.t-tabview .tab-nav li.selected {background-color:#2647A0;border:1px solid #2647A0;font-weight:bold;}
+.t-tabview .tab-content {border:1px solid gray;}
+
+</style>
+<script src="http://a.tbcdn.cn/s/yui/3.3.0/build/yui/yui-min.js"></script>
+<script src="mod.js"></script>
+</head>
+
+
+<body>
+<div id="J_tab_1" class="t-tabview my-hack">
+  <ul class="tab-nav clearfix">
+    <li class="selected"><a href="#tab1"><em>Tab One Label</em></a></li>
+    <li><a href="#tab2"><em>Tab Two Label</em></a></li>
+    <li><a href="#tab3"><em>延时加载的tab</em></a></li>
+  </ul>
+
+  <div class="tab-content">
+	<div class="tab-pannel"><p>Tab One ContentTab One ContentTab One ContentTab One Content</p></div>
+    <div class="tab-pannel hidden"><p>Tab Two ContentTab Two ContentTab Two ContentTab Two ContentTab Two Content</p></div>
+    <div class="tab-pannel hidden"><p>延时加载的日历
+		<textarea class="lazyload">
+			<div id="J"></div>
+			<script>
+				YUI({modules:mods}).use('calendar',function(Y){
+					new Y.Calendar('J');
+				});
+			</script>
+		</textarea>
+	</p></div>
+  </div>
+</div>
+
+<script>
+YUI({
+	modules:mods,
+	author:'bachi@taobao.com'
+}).use('slide',function(Y){
+	new Y.Slide('J_tab_1',{
+		autoSlide:false,
+		eventype:'click'
+	});
+
+});
+</script>
+</body>
+</html>
