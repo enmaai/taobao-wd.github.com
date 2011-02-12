@@ -101,6 +101,7 @@ css grid 引用地址：
 - [carsousel DEMO](http://taobao-wd.github.com/slide/demo/tb-carousel.html)
 - [le.taobao.com DEMO](http://taobao-wd.github.com/slide/demo/le.taobao.com.html)
 - [mojo DEMO](http://taobao-wd.github.com/slide/demo/mojo-slide.html)
+- [lazyload Demo](http://taobao-wd.github.com/lazy-mojo/demo.html)
 
 ## Pagination 分页控件
 - [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/masterpagination/README.markdown)

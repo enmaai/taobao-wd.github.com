@@ -9,6 +9,7 @@
 - [carsousel DEMO](http://taobao-wd.github.com/slide/demo/tb-carousel.html)
 - [le.taobao.com DEMO](http://taobao-wd.github.com/slide/demo/le.taobao.com.html)
 - [mojo DEMO](http://taobao-wd.github.com/slide/demo/mojo-slide.html)
+- [lazyload Demo](http://taobao-wd.github.com/lazy-mojo/demo.html)
 
 # Doc
 
