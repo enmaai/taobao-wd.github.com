@@ -10,7 +10,7 @@ var mods = {
 		requires:['node','anim']
 	},
 	calendar:{
-		fullpath:'http://taobao-wd.ns1.name/bachi/jayli/taobao-wd/gallery/calendar/calendar.js',
+		fullpath:'../calendar/calendar.js',
 		requires:['calendar-skin','node']
 	},
 	'calendar-skin':{
