@@ -46,6 +46,9 @@
 只可以选择今日之后的十天以内的日期
 <div id="J_mindate_maxdate"></div>
 <hr size=1 />
+<h3>日历起始日期自定义</h3>
+<div id="J_start_day"></div>
+<hr size=1 />
 <h3>可选择时间</h3>
 每个面板的time选择永远保持一致，而且当选择范围的时候，起始time和结束time是一致的
 <div id="J_with_time"></div>
@@ -153,6 +156,11 @@ YUI({
 		maxdate:showdate(10,new Date())
 	});
 
+	//日历起始日期自定义
+	c = new Y.Calendar('J_start_day',{
+		startDay:1
+	});
+	
 	//日历可选择time
 	c = new Y.Calendar('J_with_time',{
 		withtime:true

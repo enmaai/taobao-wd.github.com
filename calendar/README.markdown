@@ -69,8 +69,9 @@
 	 *			multi_select:{number} 日历页数，默认为1
 	 *			withtime:{boolean} 日历是否显示time选择，默认为false
 	 *			date:{date} 默认显示该日期所在的月份，默认为当天
+	 *			startDay:{number} 起始日的偏移，默认为周日，建议取值范围(1-7)
 	 *			navigator:{boolean} 是否可以选择跳转的月份，默认为true
-				useShim:{boolean} 是否使用iframe遮罩,ie6默认加遮罩
+	 *			useShim:{boolean} 是否使用iframe遮罩,ie6默认加遮罩
 	 *		Y.Calendar的实例的方法：
 	 *			init:初始化，参数为options
 	 *			render:渲染，init在new的时候调用，render可以在运行时任意时刻调用，参数为options，其成员可覆盖原参数
