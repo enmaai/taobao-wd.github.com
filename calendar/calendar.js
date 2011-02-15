@@ -22,9 +22,8 @@
  *			multi_select:{number} 日历页数，默认为1
  *			withtime:{boolean} 日历是否显示time选择，默认为false
  *			date:{date} 默认显示该日期所在的月份，默认为当天
- *			startDay:{number} 起始日的偏移，默认为周日，建议取值范围(1-7)
  *			navigator:{boolean} 是否可以选择跳转的月份，默认为true
- *			useShim:{boolean} 是否使用iframe遮罩,ie6默认加遮罩
+ 			useShim:{boolean} 是否使用iframe遮罩,ie6默认加遮罩
  *		Y.Calendar的实例的方法：
  *			init:初始化，参数为options
  *			render:渲染，init在new的时候调用，render可以在运行时任意时刻调用，参数为options，其成员可覆盖原参数
@@ -282,7 +281,6 @@ YUI.add('calendar', function (Y) {
 			that.popup = (typeof o.popup == 'undefined' || o.popup== null)?false:o.popup;
 			that.withtime = (typeof o.withtime == 'undefined' || o.withtime == null)?false:o.withtime;
 			that.action = (typeof o.action == 'undefined' || o.action == null)?['click']:o.action;
-			that.startDay = (typeof o.startDay == 'undefined' || o.startDay == null)?0:o.startDay;
 			if(typeof o.useShim !== 'undefined' && o.useShim === true){
 				that.useShim = true;	
 			}else if(typeof o.useShim !== 'undefined' && o.useShim === false){
@@ -291,9 +289,6 @@ YUI.add('calendar', function (Y) {
 				that.useShim = true;	
 			}else{
 				that.useShim = false;
-			}
-			if(o.startDay){
-				that.startDay = (7 - that.startDay) % 7;
 			}
 			if(typeof o.range != 'undefined' && o.range != null){
 				var s = that.showdate(1,new Date(o.range.start.getFullYear()+'/'+(o.range.start.getMonth()+1)+'/'+(o.range.start.getDate())));
@@ -417,25 +412,6 @@ YUI.add('calendar', function (Y) {
 			}
 			return [_year,_month];
 		},
-		//处理日期的偏移量
-        handleOffset: function() {
-            var that = this,
-                data = ['日','一','二','三','四','五','六'],
-                temp = '<span>{$day}</span>',
-                offset = that.startDay,
-                day_html = '',
-                a = [];
-            for (var i = 0; i < 7; i++) {
-                a[i] = {
-                    day:data[(i - offset + 7) % 7]
-                };
-            }
-            day_html = that.templetShow(temp, a);
-
-            return {
-                day_html:day_html
-            };
-        },
 		//处理箭头
 		handleArrow:function(){
 
@@ -719,7 +695,6 @@ YUI.add('calendar', function (Y) {
 					'</div>',
 					'<div class="c-bd">',
 						'<div class="whd">',
-						/*
 							'<span>日</span>',
 							'<span>一</span>',
 							'<span>二</span>',
@@ -727,8 +702,6 @@ YUI.add('calendar', function (Y) {
 							'<span>四</span>',
 							'<span>五</span>',
 							'<span>六</span>',
-							*/
-							fathor.handleOffset().day_html,
 						'</div>',
 						'<div class="dbd clearfix">',
 							'{$ds}',
@@ -968,8 +941,7 @@ YUI.add('calendar', function (Y) {
 				var cc = this;
 
 				var s = '';
-				//var startweekday = new Date(cc.year+'/'+(cc.month+1)+'/01').getDay();//当月第一天是星期几
-				var startweekday = (new Date(cc.year + '/' + (cc.month + 1) + '/01').getDay() + cc.fathor.startDay + 7) % 7;//当月第一天是星期几
+				var startweekday = new Date(cc.year+'/'+(cc.month+1)+'/01').getDay();//当月第一天是星期几
 				var k = cc.fathor.getNumOfDays(cc.year,cc.month + 1) + startweekday;
 				
 				for(var i = 0;i< k;i++){
@@ -994,7 +966,8 @@ YUI.add('calendar', function (Y) {
 
 					}else if((cc.fathor.range.start != null && cc.fathor.range.end != null) //日期选择范围
 								&& (
-									_td_s.getTime()>=cc.fathor.range.start.getTime() && _td_e.getTime() < cc.fathor.range.end.getTime()) ){
+									_td_s.getTime()>=cc.fathor.showdate(1,cc.fathor.range.start).getTime() 
+										&& _td_e.getTime() < cc.fathor.showdate(1,cc.fathor.range.end).getTime()) ){
 								
 								//alert(Y.dump(_td_s.getDate()));
 								

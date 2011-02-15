@@ -61,6 +61,11 @@ css grid 引用地址：
 - bug:[Demo](http://taobao-wd.github.com/js-float/js_float_1.html)
 - bugfix:[Demo](http://taobao-wd.github.com/js-float/js_float_2.html)
 
+# 基于yui3.3.0 的所有自定义模块的combine
+
+- [Doc](https://github.com/taobao-wd/taobao-wd.github.com/blob/master/full-combine/README.markdown)
+- [Demo](http://taobao-wd.github.com/full-combine/demo.html)
+
 ## Escape和encodeURI
 - [Demo](http://taobao-wd.github.com/escape_and_encodeURI/escape_and_encodeURIComponent_test.html)
 

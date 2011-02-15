@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="gbk">
+<title>combine</title>
+<script src="http://a.tbcdn.cn/s/yui/3.3.0/build/yui/yui-min.js"></script>
+<base target="_blank" />
+</head>
+
+
+
+
+
+
+<body class="yui3-skin-sam  yui-skin-sam">
+<h1>
+基于yui 3.3.0 将模块的path combine入一个请求
+</h1>
+js 请求有3个，种子，laoder.js，combo
+<div id="J"></div>
+<script>
+var mods = {
+	calendar:{
+		path:'index-v2/js/calendar.js',
+		root:'apps/lottery/00012/',
+		combine:true,
+		requires:['node','calendar-skin']
+	},
+	'calendar-skin':{
+		path:'index-v2/css/calendar.css',
+		root:'apps/lottery/00012/',
+		combine:true,
+		type:'css'
+	}
+};
+YUI({
+	charset:'gbk',
+	combine:true,
+	comboBase:'http://a.tbcdn.cn/??',
+	root:'s/yui/3.3.0/build/',
+	filter:{
+		'searchExp': "&", 
+		'replaceStr': ","
+	},
+	modules:mods,
+	author:'bachi@taobao.com'
+}).use('calendar','console',function(Y){
+	new Y.Console().render();
+	new Y.Calendar('J');
+});
+</script>
+</body>
+</html>
